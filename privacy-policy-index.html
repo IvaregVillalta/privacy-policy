@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Meta Ads Manager Integration Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1d26;
+      --body: #3a3d4a;
+      --muted: #6b7084;
+      --accent: #2553e8;
+      --accent-soft: #e8edff;
+      --border: #e2e4ec;
+      --bg: #fafbfd;
+      --white: #ffffff;
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      color: var(--body);
+      background: var(--bg);
+      line-height: 1.72;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ── */
+    .hero {
+      background: linear-gradient(135deg, #1a1d26 0%, #2a2f42 50%, #1e2536 100%);
+      color: var(--white);
+      padding: 5rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 20%, rgba(37, 83, 232, 0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 80% 80%, rgba(37, 83, 232, 0.08) 0%, transparent 50%);
+    }
+    .hero-inner {
+      max-width: 740px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 100px;
+      padding: 0.35rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .hero .subtitle {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.55);
+      font-weight: 400;
+    }
+    .hero .effective {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ── Content ── */
+    .content {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      color: var(--ink);
+      margin: 2.8rem 0 1rem;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 2rem 0 0.6rem;
+    }
+
+    p { margin-bottom: 1rem; }
+
+    ul {
+      margin: 0 0 1.2rem 1.4rem;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 0.45rem;
+      padding-left: 0.3rem;
+    }
+    li::marker { color: var(--accent); }
+
+    strong { color: var(--ink); font-weight: 600; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.8rem;
+      margin: 1rem 0;
+    }
+    .contact-card p { margin-bottom: 0.35rem; }
+    .contact-card .label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 3.5rem 1.5rem 3rem; }
+      .content { padding: 2rem 1.5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="badge">Legal Document</div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Meta Ads Manager Integration Tool</p>
+    <p class="effective">Effective Date: March 25, 2026</p>
+  </div>
+</header>
+
+<main class="content">
+
+  <h2>1. Introduction</h2>
+  <p>This Privacy Policy describes how <strong>[Your Company Name]</strong> ("we," "us," or "our") collects, uses, stores, shares, and protects information obtained through our Meta Ads Manager Integration Tool (the "Application" or "Service"). This Application connects to the Meta (Facebook) Ads Manager API to enable authorized users to manage advertising campaigns, retrieve performance data, and perform related operations via Claude Code or other authorized interfaces.</p>
+  <p>By accessing or using the Application, you consent to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this policy, please do not use the Application.</p>
+
+  <hr class="divider">
+
+  <h2>2. Information We Collect</h2>
+  <p>We collect and process the following categories of information:</p>
+
+  <h3>2.1 Information from Meta Platform</h3>
+  <ul>
+    <li>Ad account identifiers and account metadata</li>
+    <li>Campaign, ad set, and ad performance data (impressions, clicks, spend, conversions)</li>
+    <li>Audience and targeting configuration data</li>
+    <li>Business Manager and ad account access permissions</li>
+    <li>User name, email, and Meta user ID associated with authenticated sessions</li>
+  </ul>
+
+  <h3>2.2 Authentication Data</h3>
+  <ul>
+    <li>OAuth access tokens issued by Meta for API authorization</li>
+    <li>Token expiration and refresh metadata</li>
+    <li>Permissions (scopes) granted by the user during Facebook Login</li>
+  </ul>
+
+  <h3>2.3 Technical and Usage Data</h3>
+  <ul>
+    <li>API request logs (endpoints accessed, timestamps, response status codes)</li>
+    <li>Error logs for debugging and service reliability</li>
+    <li>Device and browser information transmitted during authentication</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>3. How We Use Your Information</h2>
+  <p>We use the information we collect solely for the following purposes:</p>
+  <ul>
+    <li>To authenticate your identity and authorize access to your Meta ad accounts</li>
+    <li>To retrieve, display, and manage your advertising campaign data as directed by you</li>
+    <li>To execute campaign management operations (creating, editing, pausing, or deleting campaigns, ad sets, and ads) on your behalf</li>
+    <li>To provide analytics, reporting, and insights based on your ad performance data</li>
+    <li>To maintain, troubleshoot, and improve the reliability and security of the Application</li>
+    <li>To comply with Meta Platform Terms, Developer Policies, and applicable laws</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>4. Legal Basis for Processing</h2>
+  <p>We process your personal data based on the following legal grounds:</p>
+  <ul>
+    <li><strong>Consent:</strong> You provide explicit consent when you authorize the Application through Meta's Facebook Login dialog and grant the requested permissions.</li>
+    <li><strong>Contractual Necessity:</strong> Processing is necessary to provide you with the services described in our Terms of Service.</li>
+    <li><strong>Legitimate Interest:</strong> We process certain technical data to maintain security, prevent abuse, and improve our services.</li>
+    <li><strong>Legal Obligation:</strong> We may process data to comply with applicable laws, regulations, or valid legal requests.</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>5. Data Sharing and Disclosure</h2>
+  <p>We do not sell, rent, or trade your personal information or Meta user data to third parties. We may share information only in the following limited circumstances:</p>
+  <ul>
+    <li><strong>With Meta Platforms, Inc.:</strong> As required to operate within the Meta Platform and comply with Meta's Platform Terms and Developer Data Use Policy.</li>
+    <li><strong>Service Providers:</strong> With trusted third-party service providers who assist in operating our Service (e.g., cloud hosting, error monitoring), bound by contractual data protection obligations.</li>
+    <li><strong>Legal Requirements:</strong> When required by law, regulation, legal process, or governmental request, or to protect the rights, property, or safety of our users or the public.</li>
+    <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets, provided the receiving party agrees to honor the terms of this Privacy Policy.</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>6. Data Retention</h2>
+  <p>We retain your data only for as long as necessary to provide the Service and fulfill the purposes described in this Privacy Policy. Specifically:</p>
+  <ul>
+    <li>OAuth tokens are stored only for the duration of active sessions and are revoked or deleted when you disconnect the Application or when tokens expire.</li>
+    <li>Campaign and performance data retrieved from Meta is processed in real-time or cached temporarily and is not stored permanently unless required for a specific feature you have enabled.</li>
+    <li>Technical logs are retained for a maximum of 90 days for debugging and security purposes, after which they are automatically deleted.</li>
+  </ul>
+  <p>When you stop using the Application or request deletion, we will delete your data without undue delay, in compliance with Meta's Developer Data Use Policy.</p>
+
+  <hr class="divider">
+
+  <h2>7. Data Security</h2>
+  <p>We implement industry-standard administrative, technical, and physical safeguards to protect your information, including:</p>
+  <ul>
+    <li>Encryption of data in transit using TLS 1.2 or higher</li>
+    <li>Encryption of stored credentials and tokens at rest</li>
+    <li>Access controls limiting data access to authorized personnel only</li>
+    <li>Regular security reviews and vulnerability assessments</li>
+    <li>Secure storage of API keys and secrets using environment variables or encrypted vaults</li>
+  </ul>
+  <p>While we strive to protect your information, no method of transmission or storage is 100% secure. We cannot guarantee absolute security but are committed to promptly addressing any security incidents in accordance with Meta's notification requirements and applicable law.</p>
+
+  <hr class="divider">
+
+  <h2>8. Your Rights and Choices</h2>
+  <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+  <ul>
+    <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+    <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data.</li>
+    <li><strong>Deletion:</strong> Request deletion of your personal data. You can also revoke the Application's access at any time through your Meta account settings (Settings &gt; Apps and Websites).</li>
+    <li><strong>Data Portability:</strong> Request your data in a structured, machine-readable format.</li>
+    <li><strong>Withdraw Consent:</strong> Withdraw your consent at any time by revoking the Application's permissions in your Meta account settings.</li>
+    <li><strong>Restriction:</strong> Request restriction of processing under certain circumstances.</li>
+    <li><strong>Objection:</strong> Object to processing based on legitimate interests.</li>
+  </ul>
+  <p>To exercise any of these rights, please contact us using the information provided in Section 13 below. We will respond to your request within 30 days or as required by applicable law.</p>
+
+  <hr class="divider">
+
+  <h2>9. Data Deletion</h2>
+  <p>You may request deletion of your data at any time by:</p>
+  <ul>
+    <li>Contacting us directly at the email address listed in Section 13</li>
+    <li>Removing the Application from your Meta account via Settings &gt; Apps and Websites on Facebook</li>
+  </ul>
+  <p>Upon receiving a deletion request or upon revocation of access, we will delete all user data in our possession without undue delay, including any data held by our service providers, in compliance with Meta's Developer Data Use Policy.</p>
+
+  <hr class="divider">
+
+  <h2>10. International Data Transfers</h2>
+  <p>Your information may be transferred to and processed in countries other than your country of residence. When we transfer data internationally, we ensure appropriate safeguards are in place, including Standard Contractual Clauses (SCCs) approved by the European Commission or other legally recognized transfer mechanisms, to protect your information in compliance with the General Data Protection Regulation (GDPR) and other applicable data protection laws.</p>
+
+  <hr class="divider">
+
+  <h2>11. Children's Privacy</h2>
+  <p>The Application is not intended for use by individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have inadvertently collected data from a child under 18, we will take steps to delete such information promptly. If you believe a child has provided us with personal data, please contact us immediately.</p>
+
+  <hr class="divider">
+
+  <h2>12. Changes to This Privacy Policy</h2>
+  <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will notify you of any material changes by posting the updated policy on our website with a revised effective date. Your continued use of the Application after any changes constitutes your acceptance of the updated Privacy Policy.</p>
+
+  <hr class="divider">
+
+  <h2>13. Contact Us</h2>
+  <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
+  <div class="contact-card">
+    <p class="label">Contact Information</p>
+    <p><strong>[Your Company Name]</strong></p>
+    <p>Email: <a href="mailto:[your-email@example.com]">[your-email@example.com]</a></p>
+    <p>Address: [Your Business Address]</p>
+    <p>Website: <a href="https://your-website.com">[https://your-website.com]</a></p>
+  </div>
+
+  <hr class="divider">
+
+  <h2>14. Compliance with Meta Platform Policies</h2>
+  <p>This Application and this Privacy Policy are designed to comply with Meta's Platform Terms, Developer Policies, and Developer Data Use Policy. We are committed to processing user data only as described herein and in accordance with all applicable Meta policies and regulations. For more information about Meta's data practices, please visit <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">Meta's Privacy Policy</a>.</p>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 [Your Company Name]. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
